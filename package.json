@@ -1,5 +1,5 @@
 {
-  "name": "wwwroot",
+  "name": "test",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -11,10 +11,6 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@eu-1.evennode.com:1c61e4a98845fda3a13957cf972a1b69.git"
   },
   "author": "",
   "license": "ISC"
