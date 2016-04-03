@@ -23,6 +23,6 @@ app.post("/addfriend", function(req, res){
 })
 
 
-app.listen(80, function(){
+app.listen(0.0.0.0, process.env.PORT, function(){
 	console.log("app has started");
 });
