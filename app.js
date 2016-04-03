@@ -23,6 +23,4 @@ app.post("/addfriend", function(req, res){
 })
 
 
-app.listen(process.env.IP, process.env.PORT, function(){
-	console.log("app has started");
-});
+app.listen(process.env.PORT);
