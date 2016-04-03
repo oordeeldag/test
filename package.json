@@ -5,14 +5,17 @@
   "main": "app.js",
   "dependencies": {
     "body-parser": "^1.15.0",
-    "ejs": "^2.4.1",
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "ejs": "^2.4.1"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Mehdi_Kiani",
-  "license": "ISC",
-  "start": "node app.js"
+  "repository": {
+    "type": "git",
+    "url": "\tgit@eu-1.evennode.com:1c61e4a98845fda3a13957cf972a1b69.git"
+  },
+  "author": "",
+  "license": "ISC"
 }
