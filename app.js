@@ -66,6 +66,6 @@ app.post("/addfriend", function(req, res){
 	friends.push(newFriend);
 	res.redirect("/friends");
 })
-
+//added from github
 
 app.listen(process.env.PORT);
