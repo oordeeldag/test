@@ -63,9 +63,9 @@ app.get("/friends", function(req, res){
 });
 app.post("/addfriend", function(req, res){
 	var newFriend = req.body.newfriend;
-	friends.push(newFriend);
+	Friend.create({name:newFriend, age: 0});
 	res.redirect("/friends");
 })
 
 
-app.listen(process.env.PORT);
+app.listen(80);
