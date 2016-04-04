@@ -68,4 +68,4 @@ app.post("/addfriend", function(req, res){
 })
 
 
-app.listen(env.process.PORT);
+app.listen(process.env.PORT);
