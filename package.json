@@ -5,8 +5,9 @@
   "main": "app.js",
   "dependencies": {
     "body-parser": "^1.15.0",
+    "ejs": "^2.4.1",
     "express": "^4.13.4",
-    "ejs": "^2.4.1"
+    "mongoose": "^4.4.11"
   },
   "devDependencies": {},
   "scripts": {
