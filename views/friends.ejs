@@ -1,17 +1,25 @@
 <% include partials/header %>
 <div class="container">
-	<h1>Friends</h1>
-
-	<% friends.forEach(function(friend){ %>
-	<li><%= friend.name %></li>
-	<% }); %>
 	<div class="row">
-		<form action="/addfriend" method="POST">
-			<input name="newfriend" placeholder="name" />
-			<br>
-			<br>
-			<button class="btn btn-primary btn-large">Add</button>
-		</form>
-	</div>	
-	<% include partials/footer %>
+
+		<div class="myW">
+			<h1>Friends</h1>
+			<% friends.forEach(function(friend){ %>
+			<li><%= friend.name %></li>
+			<% }); %>
+			<form action="/addfriend" method="POST" role="form">
+				<div class="form-group">
+					<input class="form-control" name="newfriend" placeholder="name" type="text"></input>
+				</div>
+				<div class="form-group">
+					<button type="submit" class="btn btn-primary btn-block btn-lg">Add</button>
+				</div>
+			</form>
+			<div class="centered">
+				<% include partials/footer %>
+			</div>
+		</div>
+	</div>
 </div>
+
+

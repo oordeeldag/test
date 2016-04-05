@@ -65,10 +65,10 @@ app.post("/addfriend", function(req, res){
 	var newFriend = req.body.newfriend;
 	Friend.create({name:newFriend, age: 0});
 	res.redirect("/friends");
-})
+});
 
 
-
-
-app.listen(80);
+app.listen(80, function(){
+	console.log("Server started.");
+});
 
