@@ -1,9 +1,8 @@
 body {
-	background: -webkit-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* Chrome 10+, Saf5.1+ */
-	background:    -moz-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* FF3.6+ */
-	background:     -ms-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* IE10 */
-	background:      -o-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* Opera 11.10+ */
-	background:         linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* W3C */
+	direction: rtl;
+	background: -webkit-linear-gradient(0deg, rgba(229,112,231,1) 0, rgba(200,94,199,1) 47%, rgba(168,73,163,1) 100%);
+  background: -moz-linear-gradient(90deg, rgba(229,112,231,1) 0, rgba(200,94,199,1) 47%, rgba(168,73,163,1) 100%);
+  background: linear-gradient(90deg, rgba(229,112,231,1) 0, rgba(200,94,199,1) 47%, rgba(168,73,163,1) 100%);
 }
 
 .container .row .myW h1 {
@@ -11,17 +10,19 @@ body {
                  0px 8px 13px rgba(0,0,0,0.1),
                  0px 18px 23px rgba(0,0,0,0.1);
 	font-weight: 700;
-	font-size: 5em;
+	font-size: 4em;
 	text-align: center;
+	margin-bottom: 30px;
 }
 
 .container {
+	font-family: "BBCNassim";
 	background-color: white;
 	padding-top: 50px;
 }
 
-.container .row {
-	font-family: Roboto;
+button, input, nav {
+	font-family: "BBCNassim";
 }
 
 .myW {
@@ -34,12 +35,12 @@ body {
 li {
 	list-style: none;
 	text-align: center;
-	font-size: 22px;
+	font-size: 20px;
 	line-height: 1.5em;
 }
 
 
-input[type="text"]{
+/*input[type="text"],[type="password"]{
 	font-size: 18px;
 	color: #2980b9;
 	background-color: #f7f7f7;
@@ -47,11 +48,38 @@ input[type="text"]{
 	padding: 13px 13px 13px 20px;
 	box-sizing: border-box;
 	border: 3px solid rgba(0,0,0,0);
-}
+}*/
 
 
 .centered {
 	text-align: center;
 }
 
+@font-face {
+    font-family: "BBCNassim";
+    src: url("/fonts/bbc-nassim-regular.eot");
+    src: local("/fonts/bbc-nassim-regular.eot"),
+        url("/fonts/bbc-nassim-regular.woff") format("woff"),
+        url("/fonts/bbc-nassim-regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "BBCNassim";
+    src: url("/fonts/bbc-nassim-bold.eot");
+    src: local("/fonts/bbc-nassim-bold.eot"),
+        url("/fonts/bbc-nassim-bold.woff") format("woff"),
+        url("/fonts/bbc-nassim-bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
 
+.red {
+	color: red;
+}
+
+span.glyphicon {  
+   vertical-align: top;
+ }
+
+ 
